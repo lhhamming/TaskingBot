@@ -12,7 +12,7 @@ namespace TaskingBot
     {
         static void Main(string[] args) => new Program().RunBotAsync().GetAwaiter().GetResult();
 
-        private DiscordSocketClient _client;
+        public static DiscordSocketClient _client;
         private CommandService _commands;
         private IServiceProvider _services;
 
@@ -29,7 +29,7 @@ namespace TaskingBot
             //Event subscriptions
             _client.Log += Log;
 
-            string botToken = "";
+            string botToken = "NDk0ODgwNjMxNTE2Mjk5Mjc0.Do6BXw.jrmP7fWYXDZJHt_DawAWRDVBfCs";
 
             await RegisterCommandsAsync();
 
