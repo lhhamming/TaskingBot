@@ -8,5 +8,10 @@ namespace TaskingBot.Dungeoning
     {
         //Check Equipment
 
+        //Check Rocks
+        
+        //Check what rock is mined with what pick
+
+        //Chances Per Rock
     }
 }
