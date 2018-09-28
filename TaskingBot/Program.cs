@@ -29,7 +29,7 @@ namespace TaskingBot
             //Event subscriptions
             _client.Log += Log;
 
-            string botToken = "NDk0ODgwNjMxNTE2Mjk5Mjc0.Do6BXw.jrmP7fWYXDZJHt_DawAWRDVBfCs";
+            string botToken = "";
 
             await RegisterCommandsAsync();
 
