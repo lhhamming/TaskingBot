@@ -27,10 +27,45 @@ namespace TaskingBot.Skilling
             Items[8] = "Tuna";
             Items[9] = "Sharks";
 
-        //Check level
+            Random gfish = new Random();
 
-        //Do fishing
-        
+            string GottenFish;
+
+            int gottenfish = gfish.Next(5000);
+
+            switch (gottenfish)
+            {
+                case int n when (n <= 599 && n <= 600):
+                    GottenFish = Items[0];
+                    break;
+
+                case int n when (n >= 601 && n <= 1000):
+                    GottenFish = Items[1];
+                    break;
+
+                case int n when (n >= 1001 && n <= 1200):
+                    GottenFish = Items[2];
+                    break;
+
+                case int n when (n >= 1201 && n <= 1400):
+                    GottenFish = Items[3];
+                    break;
+
+                case int n when (n >= 1401 && n <= 1500):
+                    GottenFish = Items[4];
+                    break;
+
+                default:
+                    GottenFish = "You found nothing";
+                    break;
+            }
+
+            await ReplyAsync("");
+
+            //Check level
+
+            //Do fishing
+
         }
     }
 }
